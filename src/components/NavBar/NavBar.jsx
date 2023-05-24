@@ -1,28 +1,25 @@
-import React from "react";
 import img from './assets/logopuma2.png';
 import './NavBar.css';
 import CartWidget from "../CartWidget/CartWidget";
+import { NavLink, Link } from 'react-router-dom';
 
 const NavBar = () => {
   return (
-    <header className="navbar navbar-expand-lg bg-body-tertiary">
-      <div className="container-fluid">
-        <img src={img} className="logo"alt="logo Puma"/>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon" />
-        </button>
-        <nav className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
-            <li className="nav-item">Inicio</li>
-            <li className="nav-item">Hombres</li>
-            <li className="nav-item">Mujeres</li>
-            <li className="nav-item">Niños</li>
-          </ul>
-        </nav>
-        <CartWidget/>
-      </div>
-    </header>
+    <>
+      <nav className='NavBar'>
+        <link to='/'>
+          <h3> Pluma Ecommerce</h3>
+        </link>
+        <div className='categorias'>
+          <NavLink to={`/categoria/Hombres`} className={({isActive}) =>isActive ? 'ActiveOption' : 'Option'}>Hombres</NavLink> 
+          <NavLink to={`/categoria/mujeres`} className={({isActive}) =>isActive ? 'ActiveOption' : 'Option'}>Mujeres</NavLink> 
+          <NavLink to={`/categoria/niños`} className={({isActive}) =>isActive ? 'ActiveOption' : 'Option'} >Niños</NavLink>
+        </div>
+      </nav>
+      <CartWidget/>
+    </>
+ 
   );
-};
+}
 
 export default NavBar;

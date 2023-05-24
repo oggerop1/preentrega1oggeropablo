@@ -5,7 +5,7 @@ import carrito from './assets/images.png';
 const CartWidget = () => {
     return (
     <div>
-        <img src={carrito} alt="carrito imagen" srcset="" />
+        <img src={carrito} alt="carrito imagen" className='imgCarrito' />
         <strong>10</strong>
     </div>
   )
