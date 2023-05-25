@@ -17,7 +17,18 @@ const producto = [
     imagen:
       "https://www.dexter.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dw12aa489f/products/PU_586749-01/PU_586749-01-1.JPG",
     stock: 10,
-    descripcion: "pantalones para hombre lalalala",
+    descripcion: "pantalones para mujeres lalalala",
+  },
+
+  {
+    id: "3",
+    name: "pantalones Ninos",
+    precio: 3000,
+    categoria: "3",
+    imagen:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtUsHV-UKwE07JjH-g8Ue6tiQ1rkV9fvqgfwS0lFaZMw&s",
+    stock: 10,
+    descripcion: "pantalones para Niños",
   },
 ];
 

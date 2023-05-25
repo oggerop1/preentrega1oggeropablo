@@ -11,9 +11,9 @@ const NavBar = () => {
           <h3> Pluma Ecommerce</h3>
         </Link>
         <div className='categorias'>
-          <NavLink to={`/categoria/hombres`} className={({isActive}) =>isActive ? 'ActiveOption' : 'Option'}>Hombres</NavLink> 
-          <NavLink to={`/categoria/mujeres`} className={({isActive}) =>isActive ? 'ActiveOption' : 'Option'}>Mujeres</NavLink> 
-          <NavLink to={`/categoria/niños`} className={({isActive}) =>isActive ? 'ActiveOption' : 'Option'} >Niños</NavLink>
+          <NavLink to={`/categoria/1`} className={({isActive}) =>isActive ? 'ActiveOption' : 'Option'}>Hombres</NavLink> 
+          <NavLink to={`/categoria/2`} className={({isActive}) =>isActive ? 'ActiveOption' : 'Option'}>Mujeres</NavLink> 
+          <NavLink to={`/categoria/3`} className={({isActive}) =>isActive ? 'ActiveOption' : 'Option'} >Niños</NavLink>
         </div>
       </nav>
       <CartWidget/>

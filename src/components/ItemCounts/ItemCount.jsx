@@ -3,6 +3,7 @@ import { useState } from "react";
 
 const ItemCount = ({ stock, inicial, agregar })=> {
   const [cantidad, setCantidad] = useState(inicial)
+  
   const incrementar = () => {
     if (cantidad < stock) {
       setCantidad(cantidad + 1)

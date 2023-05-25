@@ -10,6 +10,7 @@ const ItemsListContainer = ({greeting}) => {
   const {categoriaId}= useParams()
   
   useEffect(() =>{
+    
     const asyncFunc = categoriaId ? getProductoByCategoria : getProducto
     
     asyncFunc(categoriaId)
