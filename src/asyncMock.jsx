@@ -3,7 +3,7 @@ const producto = [
     id: "1",
     name: "Zapatillas",
     precio: 1000,
-    categoria: "hombres",
+    categoria: "1",
     imagen:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPI_Yc-B40iVtUEh2EOLYbMsYIqaDicybTCiXaxFxxwg&s",
     stock: 23,
@@ -13,7 +13,7 @@ const producto = [
     id: "2",
     name: "pantalones",
     precio: 3000,
-    categoria: "hombres",
+    categoria: "2",
     imagen:
       "https://www.dexter.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dw12aa489f/products/PU_586749-01/PU_586749-01-1.JPG",
     stock: 10,
@@ -38,6 +38,11 @@ export const getProductoById = (productoID) =>{
 }
 
 
-export const getProductoByCategoria= () =>{
-  
+export const getProductoByCategoria = (idCategoria) => {
+  return new Promise(resolve => {
+      setTimeout(() => {
+          const productosCategoria = producto.filter(prod => prod.categoria === idCategoria);
+          resolve(productosCategoria);
+      }, 100)
+  })
 }

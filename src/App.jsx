@@ -7,7 +7,7 @@ import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailCont
 
 function App() {
   return (
-    <>
+    <div className='App'>
       <BrowserRouter>
         <NavBar/>
         <Routes>
@@ -17,7 +17,7 @@ function App() {
           <Route path= '*' element ={<h1>404 pagina no encontrada</h1>}  />
         </Routes>
       </BrowserRouter>
-    </>
+    </div>
   );
 }
 
